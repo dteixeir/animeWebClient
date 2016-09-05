@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="clientApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li><a ng-href="#/animes">My Anime</a></li>
+              <li><a ng-href="#/allanimes">All Animes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div ng-view></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- show links -->
+    <script src="component/component.module.js"></script>
+    <script src="component/usersShows/usersShows.module.js"></script>
+    <script src="component/usersShows/animes.js"></script>
+
+    <script src="component/allShows/allShows.module.js"></script>
+    <script src="component/allShows/allShows.js"></script>
+
+    <!-- api links -->
+    <script src="api/api.module.js"></script>
+    <script src="api/animes/animes.module.js"></script>
+    <script src="api/animes/animes.factory.js"></script>
+    
+    <script src="api/users/users.module.js"></script>
+    <script src="api/users/users.factory.js"></script>
+
+    <script src="api/authenticate/authenticate.module.js"></script>
+    <script src="api/authenticate/authenticate.factory.js"></script>
+
+    <!-- episodeList links --> 
+    <script src="component/episodeList/episodeList.module.js"></script>
+    <script src="component/episodeList/animeEpisodes.js"></script>
+
+    <!-- episode links --> 
+    <script src="component/episode/episode.module.js"></script>
+    <script src="component/episode/anime-view.js"></script>
+
+    <!-- Auth links -->
+    <script src="component/authenticate/authenticate.module.js"></script>
+    <script src="component/authenticate/authenticate.js"></script>
+
+    <!-- directive -->
+    <script src="directive/directive.module.js"></script>
+    <script src="directive/youtube/youtube.directive.js"></script>
+    <script src="directive/goClick.directive.js"></script>
+
+    <!-- filter --> 
+    <script src="filter/filter.module.js"></script>
+    <script src="filter/trusted.filter.js"></script>
+
+    
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="app.module.js"></script>
+    <script src="route.js"></script>
+    <script src="constant.js"></script>
+    <script src="auth.js"></script>
+
+    <!-- endbuild -->
+</body>
+</html>
