@@ -1,5 +1,5 @@
 node_modules/*
 .vscode
-.tmp/*
+.tmp
 /dist
 app/bower_components
