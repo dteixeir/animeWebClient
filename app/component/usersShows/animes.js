@@ -31,6 +31,7 @@ angular.module('clientApp.component.usersShows')
     function getUnseenEpisodeCount() {
       for(var i in vm.animes) {
         let k = i;
+        var title = vm.animes[k].Title; 
         animesFactory.getUnseenEpisodeCount(vm.animes[k].Title)
           .then( function successCallback(data) {
             vm.animes[k]["UnseenCount"] = data.data.data;
