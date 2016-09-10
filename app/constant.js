@@ -2,13 +2,13 @@
   'use strict';
 
   var port = 8080;
-  var localhost = "http://localhost:";
+  var rootUrl = "http://localhost:";
 
   angular.module('clientApp')
     .constant("API", {
-      "ANIMES": localhost + port + "/animes/",
-      "EPISODES": localhost + port + "/episode/",
-      "USERS": localhost + port + "/users/",
-      "AUTHENTICATE": localhost + port + "/authenticate/",
+      "ANIMES": rootUrl + port + "/animes/",
+      "EPISODES": rootUrl + port + "/episode/",
+      "USERS": rootUrl + port + "/users/",
+      "AUTHENTICATE": rootUrl + port + "/authenticate/",
     });
 })();
