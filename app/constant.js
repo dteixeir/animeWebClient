@@ -2,7 +2,7 @@
   'use strict';
 
   var port = 8080;
-  var rootUrl = "http://localhost:";
+  var rootUrl = "https://anime-server.herokuapp.com/";
 
   angular.module('clientApp')
     .constant("API", {
