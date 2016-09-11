@@ -6,9 +6,9 @@
 
   angular.module('clientApp')
     .constant("API", {
-      "ANIMES": rootUrl + port + "/animes/",
-      "EPISODES": rootUrl + port + "/episode/",
-      "USERS": rootUrl + port + "/users/",
-      "AUTHENTICATE": rootUrl + port + "/authenticate/",
+      "ANIMES": rootUrl + "/animes/",
+      "EPISODES": rootUrl + "/episode/",
+      "USERS": rootUrl + "/users/",
+      "AUTHENTICATE": rootUrl + "/authenticate/",
     });
 })();
