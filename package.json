@@ -24,7 +24,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "bower": "^1.7.9",
