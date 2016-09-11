@@ -73,3 +73,9 @@ gulp.task('serve', function (cb) {
     ['styles'],
     ['bower'], cb);
 });
+
+gulp.task('default', function(cb) {
+  runSequence(
+    ['css:clean'],['styles'], ['bower']
+  )
+});
